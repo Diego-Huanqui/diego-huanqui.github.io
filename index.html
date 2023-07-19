@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css 1/bootstrap.min.css">
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <title>Página Web</title>
+</head>
+<style>
+  body {
+      margin: 0;
+      padding: 10;
+    }
+    .navbar {
+  display: flex;
+ 
+ align-items: center;
+  padding: 0px;
+  margin-top: 5px;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+.nav-links li a:hover {
+  color: #ff0000; 
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ff0000; 
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+   .logo {
+      margin-right: auto;
+      position: relative;
+     
+      float: left;
+    }
+    aside {
+      margin-top: 20px;
+      padding: 10px;
+      width: 40%;
+      float: right;
+    }
+    main {
+      padding: 20px;
+    }
+    .title-container {
+      
+      padding: 20px;
+      text-align: center;
+    }
+    aside img{
+      margin-top: 20px;
+    }
+    h1{
+      position: relative;
+      left: 300px;
+    }
+    .contenedores{
+      border: 1px solid #080808;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-decoration: none;
+      width: 650px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .datos{
+      border: 1px solid #080808;
+      top: 1000px;
+      left: 50px;
+    }
+    h3{
+      text-decoration: none;
+      color:#030303;
+      text-underline-offset: none;
+    }
+    
+</style>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="https://www.lhs.edu.pe/"><img src="LOGO LHS.jpg" alt="Logo" ></a>
+      </div>
+      <ul class="nav-links">
+        
+        <li><a href="acerca de nosotros.html">Acerca de Nosotros</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+<h1>Mejores Resorts del mundo</h1>
+  <aside>
+<img src="collage.png" alt="dada">  </aside>
+
+  <main>
+    <article>
+      <h2>Resorts</h2>
+      <section>
+        
+        <div class="contenedores">
+          <a href="Melia caribe.html"><h3>Meliá Caribe Beach Resort</h3>
+        </div></a>
+        <a href="barceló.html">
+        <div class="contenedores">
+          <h3>Barceló Bávaro Palace</h3>
+        </div></a>
+        <a href="anax.html">
+        <div class="contenedores">
+          <h3>Anax Resort & Spa</h3>
+        </div></a>
+        <a href="uxua.html">
+        <div class="contenedores">
+          <h3>Uxua casa Hotel & Spa</h3>
+        </div></a>
+        <a href="banana isaland.html">
+        <div class="contenedores">
+          <h3>Banana Island Resort Doha por Anantara</h3>
+        </div></a>
+        
+      </section>
+      
+    </article>
+  </main>
+</body>
+</html>
